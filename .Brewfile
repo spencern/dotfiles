@@ -28,6 +28,7 @@ brew "planck" # Stand-alone ClojureScript REPL
 brew "postgresql" # Object-relational database system
 brew "prettier" # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew "python" # Interpreted, interactive, object-oriented programming language
+brew "rbenv" # Ruby version manager
 brew "ruby-build" # Install various Ruby versions and implementations
 brew "sqlite" # Command-line interface for SQLite
 brew "shellcheck" # Static analysis and lint tool, for (ba)sh scripts
@@ -44,7 +45,6 @@ brew "kubernetes-helm" # The Kubernetes package manager
 ## Scripting
 brew "automake" # Tool for generating GNU Standards-compliant Makefiles
 brew "autoconf" # Automatic configure script builder
-brew "exercism" # Kata Exercises via exercism.io
 
 ## Utils
 brew "ack" # Search tool like grep, but optimized for programmers
@@ -61,7 +61,7 @@ brew "fasd" # CLI tool for quick access to files and directories
 brew "fd" # Simple, fast and user-friendly alternative to find
 brew "findutils" # Collection of GNU find, xargs, and locate
 brew "fzf" # Command-line fuzzy finder written in Go
-brew "gdbm" # GNU database manager
+#brew "gdbm" # GNU database manager
 brew "geoip" # This library is for the GeoIP Legacy format (dat)
 brew "git-lfs" # Git extension for versioning large files
 brew "git" # Distributed revision control system
@@ -79,16 +79,15 @@ brew "jq" # Lightweight and flexible command-line JSON processor
 brew "mas" # Mac App Store command-line interface
 brew "moreutils" # Collection of tools that nobody wrote when UNIX was young
 brew "mycli" # CLI for MySQL with auto-completion and syntax highlighting
-brew "neovim" # Ambitious Vim-fork focused on extensibility and agility
+#brew "neovim" # Ambitious Vim-fork focused on extensibility and agility
 brew "nmap" # Port scanning utility for large networks
 brew "openssl" # Cryptography and SSL/TLS Toolkit
-brew "packer" # Tool for creating identical machine images for multiple platforms
+#brew "packer" # Tool for creating identical machine images for multiple platforms
 brew "pandoc" # Swiss-army knife of markup format conversion
-brew "parallel" # Shell command parallelization utility
+#brew "parallel" # Shell command parallelization utility
 brew "pcre" # Perl compatible regular expressions library
 brew "pup" # Parse HTML at the command-line
 brew "ranger" # File browser
-brew "rbenv" # Ruby version manager
 brew "readline" # Library for command-line editing
 brew "reattach-to-user-namespace" # Reattach process (e.g., tmux) to background
 brew "ripgrep" # Search tool like grep and The Silver Searcher
@@ -110,6 +109,14 @@ brew "wget" # Internet file retriever
 brew "wtfutil" # The personal information dashboard for your terminal
 brew "yq" # Process YAML documents from the CLI
 
+## zsh
+brew "zsh" # The Z shell (ZSH)
+brew "zsh-autosuggestions" # Fish-like fast/unobtrusive autosuggestions for ZSH
+brew "zsh-completions" # Additional completion definitions for ZSH.
+brew "zsh-syntax-highlighting" # Fish shell-like syntax highlighting for ZSH.
+brew "zsh-history-substring-search" # ZSH port of Fish history search (up arrow)
+
+
 # Casks
 ## Fonts
 cask "font-dejavu-sans-mono-for-powerline" # Monospaced font for terminal powerline
@@ -124,28 +131,30 @@ cask "google-chrome"
 
 ## Developer Apps
 cask "docker" # platform as a service products that uses OS-level virtualization to deliver software
-cask "emacs" # the extensible, customizable, self-documenting, real-time display editor
-cask "gitter" # a chat and networking platform for open source communities
-cask "hyper" # A terminal built on web technologies
+#cask "emacs" # the extensible, customizable, self-documenting, real-time display editor
+#cask "gitter" # a chat and networking platform for open source communities
+#cask "hyper" # A terminal built on web technologies
 cask "iterm2" # Replacement for Terminal and the successor to iTerm
-cask "kitematic" # The easiest way to use Docker on Mac
+#cask "kitematic" # The easiest way to use Docker on Mac
 cask "ngrok" # secure introspectable tunnels to localhost -  webhook development tool and debugging tool
-cask "robo-3t" # MongoDB GUI
-cask "sourcetree" # Simple and powerful git GUI
+#cask "robo-3t" # MongoDB GUI
+#cask "sourcetree" # Simple and powerful git GUI
 cask "visual-studio-code" # Code editing. Redefined. Free. Built on open source. Runs everywhere.
+
+## Learning Tools
+brew "exercism" # Kata Exercises via exercism.io
 
 
 ## Productivity Tools
-# cask 'moom' # Move, zoom, and arrange windows
 cask "rectangle" # a window management app based on Spectacle, written in Swift.
 
 ## Apps
-cask "caffeine" # one click to prevent your Mac from automatically going to sleep
-cask "google-drive-file-stream"
+#cask "caffeine" # one click to prevent your Mac from automatically going to sleep
+#cask "google-drive-file-stream"
 cask "recordit"
-cask "slack"
+#cask "slack"
 cask "spotify"
-cask "zoomus"
+#cask "zoomus"
 
 ## Security Tools
 cask "suspicious-package"
@@ -164,10 +173,10 @@ cask "quicklookase"
 cask "webpquicklook"
 
 # Mac App Store Apps
-mas "Bear", id: 1091189122
-mas "Dato", id: 1470584107
-mas "Keynote", id: 409183694
-mas "mSecure", id: 412367339
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Xcode", id: 497799835
+#mas "Bear", id: 1091189122
+#mas "Dato", id: 1470584107
+#mas "Keynote", id: 409183694
+#mas "mSecure", id: 412367339
+#mas "Numbers", id: 409203825
+#mas "Pages", id: 409201541
+#mas "Xcode", id: 497799835
