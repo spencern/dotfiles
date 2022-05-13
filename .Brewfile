@@ -1,12 +1,11 @@
 # Taps
 tap "homebrew/core"
 tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "mongodb/brew"
-tap "caskroom/cask"
-tap "caskroom/fonts"
 tap "github/gh"
 tap "rschmitt/heatseeker"
-tap "wtfutil/wtfutil"
 
 # Brews
 ## AWS
@@ -16,9 +15,6 @@ brew "awscli" # Official Amazon AWS command-line interface
 ## Langs, Linters, Databases, Package Managers, and Build tools
 brew "bazel" # Google's own build tool
 brew "go" # Open source programming language to build simple/reliable/efficient software
-brew "borkdude/brew/babashka" # A Clojure babushka for the grey areas of Bash
-brew "borkdude/brew/clj-kondo" # A minimal and opinionated linter for Clojure code that sparks joy.
-brew "candid" # Small Clojure interpreter and linter
 brew "clojure" # The Clojure Programming Language
 brew "hadolint" # Smarter Dockerfile linter to validate best practices
 brew "leiningen" # Build tool for Clojure
@@ -48,7 +44,6 @@ brew "autoconf" # Automatic configure script builder
 
 ## Utils
 brew "ack" # Search tool like grep, but optimized for programmers
-brew "atombender/ktail/ktail" # a tool to tail Kubernetes logs.
 brew "bat" # Clone of cat with syntax highlighting and Git integration
 brew "circleci" # Enables you to reproduce the CircleCI environment locally
 brew "colordiff" # Color-highlighted diff output
@@ -61,8 +56,6 @@ brew "fasd" # CLI tool for quick access to files and directories
 brew "fd" # Simple, fast and user-friendly alternative to find
 brew "findutils" # Collection of GNU find, xargs, and locate
 brew "fzf" # Command-line fuzzy finder written in Go
-#brew "gdbm" # GNU database manager
-brew "geoip" # This library is for the GeoIP Legacy format (dat)
 brew "git-lfs" # Git extension for versioning large files
 brew "git" # Distributed revision control system
 brew "github/gh/gh" # GitHub CLI
@@ -74,17 +67,13 @@ brew "hstr" # Bash and zsh history suggest box
 brew "htop" # Improved top (interactive process viewer)
 brew "icu4c" # C/C++ and Java libraries for Unicode and globalization
 brew "jenv" # Manage your Java environment
-brew "joplin" # Note taking and to-do application with synchronisation capabilities
 brew "jq" # Lightweight and flexible command-line JSON processor
 brew "mas" # Mac App Store command-line interface
 brew "moreutils" # Collection of tools that nobody wrote when UNIX was young
 brew "mycli" # CLI for MySQL with auto-completion and syntax highlighting
-#brew "neovim" # Ambitious Vim-fork focused on extensibility and agility
 brew "nmap" # Port scanning utility for large networks
 brew "openssl" # Cryptography and SSL/TLS Toolkit
-#brew "packer" # Tool for creating identical machine images for multiple platforms
 brew "pandoc" # Swiss-army knife of markup format conversion
-#brew "parallel" # Shell command parallelization utility
 brew "pcre" # Perl compatible regular expressions library
 brew "pup" # Parse HTML at the command-line
 brew "ranger" # File browser
@@ -95,10 +84,9 @@ brew "rlwrap" # Readline wrapper: adds readline support to tools that lack it
 brew "rschmitt/heatseeker/heatseeker" # A high-performance general purpose fuzzy finder, based on selecta
 brew "sops" # Editor of encrypted files
 brew "ssh-copy-id" # Add a public key to a remote machine's authorized_keys file
-#brew "syncthing" # Open source continuous file synchronization application
 brew "tealdeer" # Very fast implementation of tldr in Rust
 brew "telnet" # User interface to the TELNET protocol
-brew "the" #_silver_searcher Code-search similar to ack
+brew "the_silver_searcher" Code-search similar to ack
 brew "tig" # Text interface for Git repositories
 brew "tmux" # Terminal multiplexer
 brew "tree" # Display directories as trees (with optional color/HTML output)
@@ -106,7 +94,6 @@ brew "unrar" # Extract, view, and test RAR archives
 brew "up" # Tool for writing command-line pipes with instant live preview
 brew "urlview" # URL extractor/launcher
 brew "wget" # Internet file retriever
-brew "wtfutil" # The personal information dashboard for your terminal
 brew "yq" # Process YAML documents from the CLI
 
 ## zsh
@@ -119,8 +106,6 @@ brew "zsh-history-substring-search" # ZSH port of Fish history search (up arrow)
 
 # Casks
 ## Fonts
-cask "font-dejavu-sans-mono-for-powerline" # Monospaced font for terminal powerline
-cask "font-dejavu-sans" # Monospaced font based upon Bistream Vera
 cask "font-fira-code" # Monospaced font with programming ligatures
 cask "font-hack" # A typeface designed for source code https://sourcefoundry.org/hack/
 cask "font-inconsolata" # A monospace font, designed for code listings and the like
@@ -160,7 +145,6 @@ cask "spotify"
 cask "suspicious-package"
 
 # Quick Look Utils
-cask "betterzipql"
 cask "qlcolorcode"
 cask "qlimagesize"
 cask "qlmarkdown"
@@ -173,10 +157,5 @@ cask "quicklookase"
 cask "webpquicklook"
 
 # Mac App Store Apps
-#mas "Bear", id: 1091189122
 #mas "Dato", id: 1470584107
-#mas "Keynote", id: 409183694
-#mas "mSecure", id: 412367339
-#mas "Numbers", id: 409203825
-#mas "Pages", id: 409201541
 #mas "Xcode", id: 497799835
